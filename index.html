@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://allfont.net/allfont.css?fonts=star-jedi"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Video Game Quiz</title>
+  </head>
+  <body class="flex">
+    <header>
+      <h1 class="header" id="StarWars">StarWars Quiz</h1>
+    </header>
+    <main id="main">
+      <section class="container flex" id="beforeQuiz">
+        <h2>Test your gaming knowledge with my first ever Quiz.</h2>
+        <p>
+          You don't need to be an triva expert to get some right you're bound to
+          stumble on a correct answer because it's my favourite type of quiz;
+          <b>Multiple Choice!</b>
+        </p>
+
+        <button class="endBtn" id="start" onclick="unhide()">Start Quiz</button>
+      </section>
+      <section
+        style="display: none"
+        class="container-wrap flex card"
+        id="duringQuiz">
+        <div class="flex row" id="progresstracker">
+        <!--inline style to hide quiz-->
+          <h3 id="progress">
+          </h3>
+          <h3 id="timer"></h3></div>
+        <div class="QAcontainer">
+          <h2 id="question"></h2>
+          <ul id="choices">
+            <li>
+              <button class="btn" id="btn0">
+                A: <span id="choice0"></span>
+              </button>
+            </li>
+            <li>
+              <button class="btn" id="btn1">
+                B: <span id="choice1"></span>
+              </button>
+            </li>
+            <li>
+              <button class="btn" id="btn2">
+                C: <span id="choice2"></span>
+              </button>
+            </li>
+            <li>
+              <button class="btn" id="btn3">
+                D: <span id="choice3"></span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="content-wrap flex" id="afterQuiz">
+        <h1 class="content-header" id="quizComplete">
+          <!-- congratulations you completed the quiz-->
+        </h1>
+        <h2 id="score" class="grid">
+          <!--You scored X out of Y-->
+        </h2>
+        <h3 id="performance" class="grid">
+          <!--comment on how well you did 
+            based on a Switch with text outputs -->
+        </h3>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

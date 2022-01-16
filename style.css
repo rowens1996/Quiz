@@ -1,0 +1,128 @@
+:root {
+  --bluelight-colour: #33465b;
+  --bluelighttransp-colour: #33465bc9;
+  --bluedark-colour: #1f2837;
+  --bluedarktransp-colour: #1f283766;
+  --grey-colour: #181a20;
+  --greytransp-colour: #181a2066;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(0, 0, 0);
+  font-size: 1.25vw; /*Responsive font size in relation to viewport size*/
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  position:absolute
+}  
+
+main {
+  margin: 0 10vw;
+}
+
+.card-title {
+  font-size: 2vw;
+}
+
+.card {
+  background-color: lightgray;
+  border-radius: 4vw;
+  padding: 2vw;
+}
+
+ul,
+ol {
+  list-style-type: none; /* no bullet points*/
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: stretch;
+}
+ul {
+  padding: 0 2vh 0 0;
+}
+
+.btn {
+  background-color: rgb(255, 255, 255);
+  border: .25vh solid #555;
+  border-radius: 1.5vh;
+  outline: none;
+  margin: 1vh;
+  padding: 2vh;
+  width: 100%;
+  text-align: left;
+  font-size: 1.5vw;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color:orange;
+}
+
+.btn:active {
+  background-color: rgb(255, 166, 0) ;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex.row {
+  flex-direction: row;
+  font-size: 3vw;
+}
+
+
+.flex.row.button {
+  margin: 10px;
+}
+
+.content-wrap {
+  align-items: center;
+}
+
+#score {
+  color: yellow;
+}
+
+.endBtn {
+  padding: 1.5vh;
+  font-size: 1vh;
+  border-radius: 1.5vh;
+  border-width: .25vh;
+}
+
+#start {
+  background-color: violet;
+}
+
+#retry {
+  background-color: palevioletred;
+}
+
+#progresstracker {
+  align-items: baseline;
+  justify-content: space-between;
+}
+#beforeQuiz {
+  margin: 0 10vw;
+  justify-self: center;
+}
