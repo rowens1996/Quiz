@@ -132,7 +132,7 @@ let questions = [
     "Korriban"
   ),
   new Question(
-    "The Mandalorian homeworld is th only place to get rare resorce?",
+    "The Mandalorian homeworld is the only place to get rare resorce?",
     ["Bacta", "Spice", "Beskar", "Coaxium"],
     "Beskar"
   ),
